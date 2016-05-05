@@ -1,0 +1,39 @@
+% !TeX encoding = UTF-8
+% !TeX root = master.tex
+% !TeX spellcheck = en_US
+
+\input{tex/preamble}
+\input{tex/glossaries}
+
+
+%---------------------------------------------------------------------------------------------------
+% Top matter
+%---------------------------------------------------------------------------------------------------
+
+\title{\parbox{\linewidth}{\centering Long Long Long Long Long Long Long\\Title Title Title Title Title Title Title Title}}
+\author{Carlos M. Costa, First Last, First Last\texorpdfstring{\\{\LARGE \ttfamily carlos.m.costa@inesctec.pt, mail@host, mail@host}}{}}
+\institute{INESC TEC and Faculty of Engineering, University of Porto, Portugal}
+%\titlegraphic{\includegraphics[width=5cm]{logos/inesc-tec-small}}
+
+
+\begin{document}
+
+\maketitle
+
+
+%---------------------------------------------------------------------------------------------------
+% Sections
+%---------------------------------------------------------------------------------------------------
+
+\begin{columns}
+	\column{0.5}
+	\input{tex/sections/introduction}
+	\input{tex/sections/methods}
+	
+	\column{0.5}
+	\input{tex/sections/results}
+	\input{tex/sections/conclusions}
+\end{columns}
+
+\end{document}
+\endinput

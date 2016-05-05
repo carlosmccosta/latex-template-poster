@@ -1,0 +1,68 @@
+\documentclass[17pt, a1paper, portrait, margin=0mm, innermargin=15mm, blockverticalspace=15mm, colspace=15mm, subcolspace=8mm]{tikzposter}
+
+%---------------------------------------------------------------------------------------------------
+% tikzposter
+%---------------------------------------------------------------------------------------------------
+
+\tikzposterlatexaffectionproofoff
+
+\usetheme{Envelope} 										% Default, Rays, Basic, Simple, Envelope, Wave, Board, Autumn, Desert
+\usetitlestyle[titletoblockverticalspace=1.0cm]{Envelope}	% Default, Basic, Empty, Filled, Envelope, Wave, VerticalShading
+\useblockstyle{Envelope}									% Default, Basic, Minimal, Envelope, Corner, Slide, TornOut
+\usenotestyle{Sticky}										% Default, VerticalShading, Corner, Sticky
+\usecolorstyle[colorPalette=BlueGrayOrange]{Spain}			% Default, BlueGrayOrange, GreenGrayViolet, PurpleGrayBlue, BrownBlueOrange | Default, Australia, Britain, Sweden, Spain, Russia, Denmark, Germany
+\usebackgroundstyle{Rays}									% Default, VerticalGradation, Rays, BottomVerticalGradation, Empty
+
+\settitle{
+	\centering
+	\tikz[remember picture,overlay]\node[scale=0.9,anchor=west,xshift=-0.47\linewidth,yshift=5.9cm,inner sep=0pt] {\includegraphics[width=6cm]{logos/inesc-tec-small}};
+	\tikz[remember picture,overlay]\node[scale=0.99,anchor=west,xshift=-0.47\linewidth,yshift=1.0cm,inner sep=0pt] {\includegraphics[width=7cm]{logos/feup-white}};
+	\begin{minipage}[t]{0.85\linewidth}
+		\vbox{
+			\@titlegraphic \\[\TP@titlegraphictotitledistance]
+			\centering
+			\color{titlefgcolor} {\bfseries \huge \scshape \@title \par}
+			\vspace*{2em}
+			{\huge \@author \par} \vspace*{1em} {\LARGE \@institute}
+		}
+	\end{minipage}
+}
+
+
+
+%---------------------------------------------------------------------------------------------------
+% Packages
+%---------------------------------------------------------------------------------------------------
+
+\usepackage{mathpazo}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\selectlanguage{english}
+\usepackage{graphicx}
+\usepackage{grffile}
+\graphicspath{{figures/}}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabu}
+\usepackage{rotating}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{hypcap}
+\usepackage[capitalise,noabbrev,nameinlink]{cleveref}
+\usepackage[nonumberlist,acronym,nomain,nowarn]{glossaries}
+\usepackage[gen]{eurosym}
+\usepackage{setspace}
+\usepackage[center,figurename=Fig.]{caption}
+\captionsetup{font={small,stretch=1.0}}
+\glsdisablehyper
+\makeglossaries
+
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+
+%\overfullrule=3mm
